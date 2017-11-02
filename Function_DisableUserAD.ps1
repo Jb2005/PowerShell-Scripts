@@ -1,6 +1,5 @@
 Function Disable-User {
 ######
-#CSO employees
 # This will disable the user and move them to the disabled user's OU
 ######
 
