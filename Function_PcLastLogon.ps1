@@ -9,6 +9,6 @@ $DayInactive = Read-Host "What is your last logon time in days past"
 $Time = (Get-Date).AddDays(-($DayInactive))
 
 
-Get-ADComputer -Filter {LastLogonDate -lt $Time} -Properties LastLogonDate | select Name,LastLogonDate | Out-file C:\Users\itmaint\Desktop\$Filename.csv
+Get-ADComputer -Filter {LastLogonDate -lt $Time} -Properties LastLogonDate | select Name,LastLogonDate | Out-file $env:USERNAME\Desktop\$Filename.csv
 }
 
