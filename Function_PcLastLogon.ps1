@@ -1,4 +1,5 @@
-﻿function Check-PcLastLogon {
+﻿
+function Check-PcLastLogon {
 ###
 # List computers not logged onto in x numbers of days.
 # 
@@ -9,6 +10,6 @@ $DayInactive = Read-Host "What is your last logon time in days past"
 $Time = (Get-Date).AddDays(-($DayInactive))
 
 
-Get-ADComputer -Filter {LastLogonDate -lt $Time} -Properties LastLogonDate | select Name,LastLogonDate | Out-file $env:USERNAME\Desktop\$Filename.csv
+Get-ADComputer -Filter {LastLogonDate -lt $Time} -Properties LastLogonDate | select Name,LastLogonDate | Out-file $env:USERPROFILE\Desktop\$Filename.csv
 }
 
