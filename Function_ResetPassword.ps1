@@ -1,4 +1,4 @@
-﻿Function Reset-UserPassord {
+﻿Function Reset-UserPassword {
 ####
 #For reseting passwords
 ###
