@@ -1,6 +1,6 @@
 ﻿Function Reset-UserPassword {
 ####
-#For reseting passwords
+#For resetting passwords
 ###
 
 $samAccountName = Read-Host "What is the SamAccountName?"
