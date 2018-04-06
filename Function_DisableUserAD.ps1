@@ -1,7 +1,14 @@
+<#
+.SYNOPSIS
+This will disable the user and move them to the Organizational Unit of your choice.
+.DESCRIPTION
+You will be asked to enter the SamAccountName and the DistinguishedName of the Organizational Unit
+you want the account to go into.
+.PARAMETER SamAccountName
+The name of the ActiveDirectory account you want to query.
+#>
+
 Function Disable-User {
-######
-# This will disable the user and move them to the Organizational Unit of your choice.
-######
 
 #makes sure the Activedirectory module is loaded.
     Import-Module Activedirectory
