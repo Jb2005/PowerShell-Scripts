@@ -1,6 +1,8 @@
 <#
 .SYNOPSIS
-Queries ActiveDirectory for informaiont about an AD account
+Queries ActiveDirectory for information I typically need about an AD account
+(The DistinguishedName, if the Account is Enabled, The Office, Displayname, Emailaddress, 
+Description, and Title)
 .DESCRIPTION
 Use this to pull Active Directory account information.
 .PARAMETER SamAccountName
@@ -12,12 +14,17 @@ This takes one argument from the user
 
 #>
 
-Function Get-UserInfo ($User) {
+Function Get-UserInfo {
+    Param(
+        [string]$User
+    )
 
-Get-ADUser $User -Properties DistinguishedName,Enabled,Officephone,Office,Displayname,Emailaddress,Description,Title | Format-List DistinguishedName,Enabled,OfficePhone,Office,Displayname,emailaddress,Description,Title
+    #Gets to users information
+    Get-ADUser $User -Properties DistinguishedName,Enabled,Office,Displayname,Emailaddress,Description,Title |
+        Format-List DistinguishedName,Enabled,Office,Displayname,emailaddress,Description,Title
 
-echo "Now getting group membership"
+    echo "Now getting group membership"
 
-Get-ADPrincipalGroupMembership $User | select name
+    Get-ADPrincipalGroupMembership $User | select name
 
 }
