@@ -34,6 +34,6 @@ $OfficePhone = Read-Host "Enter phone extesion"
  
 
 #prints out needed information for email to a txt file on the desktop.
-Get-ADUser -Identity $User  -Properties DistinguishedName,Officephone,Displayname,Emailaddress,Description,Title | Format-List DistinguishedName,OfficePhone,Displayname,emailaddress,Description,Title | Out-File C:\Users\jpolnack\Desktop\$User.txt
+Get-ADUser -Identity $User  -Properties DistinguishedName,Officephone,Displayname,Emailaddress,Description,Title | Format-List DistinguishedName,OfficePhone,Displayname,emailaddress,Description,Title | Out-File env:username\Desktop\$User.txt
 
 Read-Host 'Press any key to continue'
