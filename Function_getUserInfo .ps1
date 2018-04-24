@@ -3,10 +3,13 @@
 Queries ActiveDirectory for information I typically need about an AD account
 (The DistinguishedName, if the Account is Enabled, The Office, Displayname, Emailaddress, 
 Description, and Title)
+
 .DESCRIPTION
 Use this to pull Active Directory account information.
+
 .PARAMETER SamAccountName
 The name of the ActiveDirectory account you want to query.
+
 .EXAMPLE
 Get-UserInfo BSnoopy
 
