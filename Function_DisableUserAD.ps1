@@ -28,7 +28,7 @@ Function Disable-User {
         }
 
 #Go through the groups and remove the user
-    $Groups | ForEach-Object { Remove-ADGroupMember -Identity $_ -Members $Usernamer -Confirm:$false }
+    $Groups | ForEach-Object { Remove-ADGroupMember -Identity $_ -Members $Username -Confirm:$false }
 
 
 #Move the user to the Disabled User OU
