@@ -38,13 +38,7 @@ Function Disable-User {
     Disable-ADAccount -Identity $User
 
 #Pull the user's information to make sure everything is done correctly.
-    Get-ADUser $User -Properties DistinguishedName,Enabled | 
+    Get-ADUser $User -Properties DistinguishedName,Enabled |
         Format-List DistinguishedName,Enabled
-
-#Reminder check list
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-echo " "
-echo "Did you shut off the email?"
-echo "!!!!"
 
 }
