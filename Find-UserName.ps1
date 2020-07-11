@@ -18,5 +18,5 @@ function Find-UserName {
         )
 
 # Get the information.
-    Get-ADUser -Filter "name -like'$Namepart'"  | select Name,SamAccountName
+    Get-ADUser -Filter "name -like'$Namepart'"  | Select-Object Name,SamAccountName
 }

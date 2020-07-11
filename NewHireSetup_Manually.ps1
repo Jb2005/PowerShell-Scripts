@@ -8,13 +8,13 @@
 Import-Module ActiveDirectory 
 
 # Lets the user know information about the script
-echo " "
-echo "This is for filling out the Active Directory part of the new hire process."
-echo " "
+Write-Host " "
+Write-Host "This is for filling out the Active Directory part of the new hire process."
+Write-Host " "
 
-echo " "
-echo "When adding email addresses do not includ the @domain.org part."
-echo "For example for if you wanted to add the All_Staff@domain.org you would just enter All_Staff."
+Write-Host " "
+Write-Host "When adding email addresses do not includ the @domain.org part."
+Write-Host "For example for if you wanted to add the All_Staff@domain.org you would just enter All_Staff."
 
 
 # Gets the user to work with and information needed to fill out the Active Directory profile.
