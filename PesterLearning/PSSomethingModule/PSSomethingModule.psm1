@@ -10,6 +10,6 @@ function Get-Something {
         Write-Output "I got $ThingToGet!"
     }
     else {
-        Write-Output "I got something!"
+        Write-Output "You skipped the Parameter!"
     }
 }
