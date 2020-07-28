@@ -1,4 +1,4 @@
-Import-Module .\MyModule.psm1 -Force
+Import-Module MyModule
 
 Describe "BuildIfChanged" {
     Context "When there are Changes" {

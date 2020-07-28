@@ -5,7 +5,6 @@ Describe "Get-Something" {
         It "should return 'I got something!'" {
             Get-Something | Should -Be 'I got something!'
         }
-
         It "should be a string" {
             Get-Something | Should -BeOfType System.String
         }
