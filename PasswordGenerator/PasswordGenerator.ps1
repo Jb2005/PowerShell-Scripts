@@ -25,7 +25,7 @@ Function PasswordGenerator {
         $Global:Name = $NewHire.SamAccountName
         $PhoneNumber = $NewHire.PhoneToReceiveSMS
         $Global:StartDate = $NewHire.StartDateAttribute
-        #Write-Host $Name,$PhoneNumber
+        
         Function CreatePassword {
 
 ## Need to add System.web for the password generater.
