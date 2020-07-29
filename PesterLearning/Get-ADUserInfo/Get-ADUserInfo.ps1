@@ -1,5 +1,18 @@
 
 function Get-ADUserInfo {
-    Get-ADUser   
+    [CmdletBinding()]
+    param (
+        [Parameter()]
+        [string]
+        $Name
+    )
     
-}Get-ADUserInfo
+    if ($PSBoundParameters.ContainsKey('ThingToGet')) {
+        Write-Output "I got $Name!"
+    }
+    else {
+        Write-Output "You skipped the Parameter!"
+    }
+
+    
+}
