@@ -5,11 +5,14 @@ JHM
 This will search Active Directory for any account that is set to start within the next 5 days.
 You can use the variable $Global:Passwordn to send the password through an email or SMS messaging system.
 
-This script relies on the start date being set in the Active Direcroty profile.
+If you have a relay set up like AWS SNS you can output to a python script for sending the information in a
+SMS to the end user.
 
-StartDateAttribute == the tag in AD with the start date.
+I have blocked out characters that would cause the person to receave and Emoji. Yes, it can happen.
 
-PhoneToReceiveSMS  == the tag in AD with the phone/email for sending the text.
+StartDateAttribute == Start date stamp on the user profile Active Directory. 
+
+PhoneToReceiveSMS  == Phone Number or Email address for sending the SMS.
 #>
 
 Function PasswordGenerator {
