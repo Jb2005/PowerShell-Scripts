@@ -1,7 +1,7 @@
 # How Parameters in scripts work, in my mind
 
 - Functions need to load before they can be used. This needs to be understood.
-- In this process I have learned there are options like setting the position of a parameter or the type. I am keeping it more basic as to hopfullly shead light on who they interact in the script or function.
+- In this process I have learned there are options like setting the position of a parameter or the type. I am keeping it more basic as to hopfullly shed light on how they interact in the script or function.
 
 <p>
 When you add the parameters before the function block then you can call parameters with the script because the system will match the parameter while it loads the function. Then when running the function, it says oh, wait, I have this $Parameter over here
@@ -29,10 +29,10 @@ function Hello-Parameters
 - This above script works both when assigning -Parameter(s) $Value when calling the script
 
 <pre><code>
-Hello-Parameters> .\Hello-Parameters.ps1 -cats Fabulous
+C:\> .\Hello-Parameters.ps1 -cats Fabulous
 Parameter 1 value is Fabulous
 Parameter 2 value is
-Hello-Parameters>
+C:\>
 
 </code></pre>
 
@@ -48,7 +48,7 @@ Supply values for the following parameters:
 Cats: are lovely
 Parameter 1 value is are lovely
 Parameter 2 value is
-Hello-Parameters>
+C:\>
 
 </code></pre>
 
