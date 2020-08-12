@@ -7,15 +7,15 @@
     If you fill them we will us the information.
     If any are mandatory you must us them
 #>
-   param(
-    [Parameter(Mandatory)]
-##  Stating we have a mandatory parameter
-    [string]$Cats,
-##  [type]$VeriableName, 
-    [Parameter()]
-##  Stating the parameter is optional
-    [string]$Parameter2    ## Don't need the ',' comma after the last parameter
-)
+#    param(
+#     [Parameter(Mandatory)]
+# ##  Stating we have a mandatory parameter
+#     [string]$Cats,
+# ##  [type]$VeriableName, 
+#     [Parameter()]
+# ##  Stating the parameter is optional
+#     [string]$Parameter2    ## Don't need the ',' comma after the last parameter
+# )
 
 function Hello-Parameters 
 {
@@ -26,15 +26,15 @@ function Hello-Parameters
             Because
     Here it runs the script and then asked for param.   
 #>
-    # param(
-    #     [Parameter(Mandatory)]
-    # ##  Stating we have a mandatory parameter
-    #     [string]$Cats,
-    # ##  [type]$VeriableName, 
-    #     [Parameter()]
-    # ##  Stating the parameter is optional
-    #     [string]$Parameter2    ## Don't need the ',' comma after the last parameter
-    # )
+    param(
+        [Parameter(Mandatory)]
+    ##  Stating we have a mandatory parameter
+        [string]$Cats,
+    ##  [type]$VeriableName, 
+        [Parameter()]
+    ##  Stating the parameter is optional
+        [string]$Parameter2    ## Don't need the ',' comma after the last parameter
+    )
  
  Write-Host "Parameter 1 value is $Cats"
 
