@@ -84,7 +84,7 @@ The other typical use is to add them to the module's folder for your version of 
 
 Another nice part to adding the parameters to your script is how they make it easier to use as you can see the options and, with more advanced techniques, accept values from the pipe '|'. (I'm looking into this next.)
 
-- Below is showing that when used as a module in function parameters also show up whne you  - + Ctrl + Spacebar
+- Below is showing that when used as a module in function parameters also show up when you  - + Ctrl + Spacebar
 
 <pre><code>
 C:\> Hello-Parameters -Cats
