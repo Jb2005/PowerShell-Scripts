@@ -7,7 +7,7 @@
     If you fill them we will us the information.
     If any are mandatory you must us them
 #>
-#    param(
+#  1  param(
 #     [Parameter(Mandatory)]
 # ##  Stating we have a mandatory parameter
 #     [string]$Cats,
