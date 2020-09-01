@@ -69,7 +69,7 @@ Write-Host "Parameter 2 value is $Parameter2"
 
 The other typical use is to add them to the module's folder for your version of PowerShell. This way all users on that computer can use the function. In these cases the function is loaded when you start your PowerShell session. So the system knows that it has a function that goes by this-name and needs/options are -Parameter(s) $Value
 
-Another nice part to adding the parameters to your script is how they make it easier to use as you can see the options and, with more advanced techniques, accept values from the pipe '|'. (I'm looking into this next.)
+Another nice part to adding the parameters to your script is how they make it easier to use as you can see the options and, with more advanced techniques, accept values from the pipe ' | '. (I'm looking into this next.)
 
 - Below is showing that when used as a module in function parameters also show up when you  - + Ctrl + Spacebar
 
