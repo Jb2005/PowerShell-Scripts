@@ -1,4 +1,4 @@
-# How Parameters in scripts work, in my mind
+# Learning to understand Parameters in PowerShell
 
 - Functions need to load before they can be used. This needs to be understood.
 - In this process I have learned there are options like setting the position of a parameter or the type. I am keeping it more basic as to hopefully shed light on how they interact in the script or function.
