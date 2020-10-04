@@ -71,21 +71,7 @@ Function PasswordGenerator {
         $PhoneNumber = $NewHire.PhoneToReceiveSMS
         $Global:StartDate = $NewHire.StartDateAttribute
 
-        Function CreatePassword {
-
-## Need to add System.web for the password generater.
-            Add-Type -AssemblyName System.web
-
-            $MinLength = 13 ## characters
-                $MaxLength = 15 ## characters
-                $Length = Get-Random -Minimum $minLength -Maximum $maxLength
-                $NonAlphaChars = 5
-                $Password = [System.Web.Security.Membership]::GeneratePassword($Length, $NonAlphaChars)
-                $Global:Passwordn = $Password -replace '[^\p{L}\p{Nd}/!/@/#/$/%/^/&/*/(/)/_/-/+/=/{/}/</>/./?/ ]', '9'
-                $SecPassword = Convertto-SecureString -String $Passwordn -AsplainText -Force
-                Set-ADAccountPassword -Identity $Name -NewPassword $SecPassword -Reset
-                Set-ADUser -Identity $Name -ChangePasswordAtLogon $false
-            }
+        
         CreatePassword
         }
 }PasswordGenerator
