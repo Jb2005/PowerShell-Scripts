@@ -23,7 +23,7 @@ function SendTo-sFTPsite {
         $FileLocation,
         [Parameter(Mandatory=$true,
         ValueFromPipelineByPropertyName=$true,
-        HelpMessage="The name ofthe server")]
+        HelpMessage="The name of the server")]
         $sFTPserverName,
         [Parameter(Mandatory=$true,
         ValueFromPipelineByPropertyName=$true,
