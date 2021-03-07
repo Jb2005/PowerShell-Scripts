@@ -1,4 +1,9 @@
 ﻿
+# Add below to the file that needs the creds
+<#
+$Credcsv = import-csv -Path "<Path\to\file.csv>"
+$Creds = New-Object System.Management.Automation.PSCredential ($Credcsv.Username,(ConvertTo-SecureString $Credcsv.Password))
+#>
 
 function Encrypt-Credentails {
     [CmdletBinding()]
@@ -33,13 +38,3 @@ $table | Export-csv $credpath -NoTypeInformation
 }
 
 Encrypt-Credentails
-
-
-
-
-
-# Add below to the file that needs the creds
-<#
-$Credcsv = import-csv -Path "<Path\to\file.csv>"
-$Creds = New-Object System.Management.Automation.PSCredential ($Credcsv.Username,(ConvertTo-SecureString $Credcsv.Password))
-#>
