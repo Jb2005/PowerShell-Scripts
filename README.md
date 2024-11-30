@@ -1,3 +1,3 @@
 # PowerShell Scripts
 
- I automate administrative tasks with PowerShell.
+Automating administrative task; Because I'm too smart to do repetative work.
