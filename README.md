@@ -1,2 +1,3 @@
 # PowerShell Scripts
-A collection of PowerShell scripts and Functions that I create to make my life easyer.
+
+I automate administrative tasks with PowerShell.
